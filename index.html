@@ -20,6 +20,25 @@
             margin-top: 5px;
             margin-bottom: 20px;
         }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .command {
+            margin-bottom: 20px;
+        }
+        .command h3 {
+            margin-bottom: 5px;
+        }
+        .command pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -55,10 +74,32 @@
         Las diferencias entre GIT y GitHub es que GIT es una herramienta de control de versiones, no necesita conexion a Internet para la mayoria de las operaciones y se utiliza de manera local, mientras que GitHub es uan herramienta de hospedaje de codigo en la nube, necesita conexion a internet y se utiliza para facilitar la colaboracion en proyectos.
     </div>
 
-    <div>
-        
-        <h1>Fin del trabajo =D</h1>
+    <div class="container">
+        <h2>Comandos Git para Subir Cambios</h2>
+        <div class="command">
+            <h3>1. Cambiar a la rama principal</h3>
+            <pre>git checkout main</pre>
+            <p>Este comando cambia a la rama principal (main) de tu repositorio.</p>
+        </div>
+        <div class="command">
+            <h3>2. Agregar los cambios al área de preparación</h3>
+            <pre>git add .</pre>
+            <p>Este comando agrega todos los archivos modificados al área de preparación.</p>
+        </div>
+        <div class="command">
+            <h3>3. Crear un commit con una descripción de los cambios</h3>
+            <pre>git commit -m "Descripción de los cambios"</pre>
+            <p>Este comando crea un commit con los cambios que has agregado al área de preparación.</p>
+        </div>
+        <div class="command">
+            <h3>4. Subir los cambios al repositorio remoto</h3>
+            <pre>git push origin main</pre>
+            <p>Este comando sube tus commits desde tu repositorio local al repositorio remoto en GitHub.</p>
+        </div>
+    </div>
 
+    <div>
+        <h1>Fin del trabajo =D</h1>
     </div>
     
 </body>
